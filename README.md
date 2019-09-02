@@ -1,4 +1,4 @@
-# mywebworkshop  <br />
+# mywebworkshop
 I will be using this repository to test things out on mywebworkshop.online  <br />
 Commit 1, 2(Sept 2):  <br />
   This was my first attempt to put html css and javascript together upload them through git to a website  <br />
