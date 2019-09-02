@@ -32,14 +32,14 @@ footer {
 h1 {
   font-size: 30px;
   margin: 10px 0 0 10px;
-  pointer-events: none;
 }
 h2 {
   font-size: 25px;
   top: 10px;
   text-align: center;
   position: relative;
-  transform: translateX(90px)
+  transform: translateX(90px);
+  pointer-events: none;
 }
 /* main sections */
 #main01 {
@@ -60,6 +60,7 @@ h2 {
   width: 1000px;
   margin: auto;
   background: white;
+  opacity: 0.9;
   border: 1px black;
   position: relative;
   transform: translateX(90px);
@@ -172,5 +173,16 @@ h2 {
   top: 350px;
   left: -1000px;
   border-radius: 50%;
+  display: inline-block;
+}
+#objectBackground {
+  position: absolute;
+  height: 1000px;
+  width: 1200px;
+  background-image: url("/images/space01.jpeg");
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: inline-block;
 }

@@ -2,6 +2,7 @@
 var x = 0;
 var y = 0;
 var tempX = 0;
+var tempY = 0;
 
 function showCoor(event) {
   x = event.clientX;
@@ -26,16 +27,7 @@ function moveDiv(x) {
   }
 }
 
-/* phased out until figuring out how to connect javascript to html
-
-//set-up to use getMouseXY function on MouseMove
-document.onmousemove = getMouseXY();
-
-//main function to retrieve mouse x-y pos.s
-function getMouseXY(e) {
-  tempX = event.clientX + document.body.scrollLeft
-  tempY = event.clientY + document.body.scrollTop
-  moveDiv(tempX);
-  return true;
+function moveBackground() {
+  tempY = window.scrollY/5-500;
+  document.getElementById('objectBackground').style.top = tempY + 'px';
 }
-*/

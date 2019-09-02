@@ -12,7 +12,7 @@
   <script src="try.js"></script>
   <script src="parallax.js"></script>
 </head>
-<body>
+<body onscroll="moveBackground()">
   <header>
     <h1>MyWebWorkshop</h1>
   </header>
@@ -24,6 +24,7 @@
     <button class="button button02" onclick="goMain01()"><span>Before </span></button>
     <h2>This is where I practice parallex effect.</h2>
     <div id="div01" onmousemove="showCoor(event)" onmouseout="clearCoor()">
+      <div id="objectBackground"></div>
       <div id="object01"></div>
       <div id="object02"></div>
       <div id="object03"></div>
